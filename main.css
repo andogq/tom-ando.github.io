@@ -1,0 +1,130 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+
+body, html {
+	width: 100%;
+	height: 100%;
+	background: #161A2B;
+}
+
+#top {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	height: 55%;
+}
+
+#mainHeading {
+	position: absolute;
+	top: 10%;
+	left: 2%;
+	font-family: monospace;
+	font-size: 60px;
+	color: #D44A00;
+}
+
+#headingText1 {
+	display: block;
+}
+
+#subtitle {
+	position: absolute;
+	/* top in js*/
+	left: 10%;
+	color: lightgray;
+	font-family: monospace;
+	font-size: 20px;
+}
+
+#bottom {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height: 30%;
+}
+
+#headingBreak {
+	bottom: 134px;
+}
+
+#underConstruction {
+	position: absolute;
+	bottom: 58px;
+	padding: 0 15px;
+	height: 72px;
+	color: lightgray;
+	font-family: monospace;
+	font-size: 15px;
+}
+
+#socialIcon {
+	position: absolute;
+	bottom: 20px;
+	/* left in js */
+	width: 99px;
+	height: 30px;
+	overflow: hidden;
+	/*background: white;*/
+}
+
+#socialIconBreak {
+	bottom: 0;
+}
+
+.javascriptLine::-webkit-scrollbar {display: none;}
+
+.javascriptLine {
+	position: absolute;
+	left: 0;
+	right: 0;
+	height: 12px;
+	color: #13122E;
+	overflow-y: hidden;
+	overflow-x: scroll;
+	white-space: nowrap;
+	font-family: monospace;
+	background: orange;
+	font-size: 10px;
+	-ms-overflow-style: none;
+}
+
+.socialIcon {
+	width: 30px;
+}
+
+/* Media queries */
+@media (min-width: 425px) {
+	#mainHeading {
+		top: 20%;
+	}
+	#headingText1 {
+		display: inline;
+	}
+	#subtitle {
+		left: 13%;
+	}
+}
+
+@media (min-width: 600px) {
+	#mainHeading {
+		font-size: 85px;
+	}
+	#subtitle {
+		left: 10%;
+		font-size: 25px;
+	}
+	#underConstruction {
+		font-size: 18px;
+	}
+	#socialIcon {
+		width: 158px;
+		height: 55px;
+	}
+	.socialIcon {
+		width: 50px;
+	}
+}
