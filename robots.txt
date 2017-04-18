@@ -1,4 +1,4 @@
 User-agent: *
-Disallow: /*
+Disallow: /
 Allow: /index.html
-Allow: /
+Allow: /$
