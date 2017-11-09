@@ -1,0 +1,29 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+#container {
+    width: 100%;
+    height: 100%;
+    background: #000000 url("background.jpg") no-repeat center center fixed;
+    background-size: cover;
+}
+
+#menuBar {
+    width: 100%;
+    height: 5%;
+}
+
+#menu {
+    font-family: "Verdana";
+    font-size: 1.4em;
+    color: white;
+    position: absolute;
+    right: 10px;
+}
