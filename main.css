@@ -9,13 +9,18 @@ html, body {
 }
 
 #container {
-    width: 100%;
-    min-height: 100%;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
     background: #000000 url("background.jpg") no-repeat center center fixed;
     background-size: cover;
+    overflow-y: scroll;
 }
 
 #menuBar {
+    position: fixed;
     width: 100%;
     height: 5%;
 }
@@ -28,11 +33,53 @@ html, body {
     right: 10px;
 }
 
-#title {
+#heading {
     font-family: "Trebuchet MS";
     color: #CC1514;
     font-size: 20em;
     position: absolute;
     top: 20%;
     right: 5%;
+}
+
+#subHeading {
+    font-family: "Trebuchet MS";
+    font-size: 2em;
+    color: #1F394C;
+    position: absolute;
+    bottom: 20%;
+    right: 5%;
+    text-align: right;
+}
+
+.title {
+    color: #FF5C40;
+    font-family: "Trebuchet MS";
+    font-size: 5em;
+    text-align: right;
+}
+
+p {
+    color: black;
+    font-family: "Trebuchet MS";
+    font-size: 1.5em;
+    text-align: right;
+}
+
+#fadedBackground {
+    background-color: white;
+    opacity: 0;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    transition: opacity 1s;
+}
+
+#header, #about {
+    display: inline-block;
+    position: static;
+    width: 100%;
+    height: 100%;
 }
