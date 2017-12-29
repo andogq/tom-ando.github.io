@@ -1,0 +1,3 @@
+[submodule "jsblog"]
+	path = jsblog
+	url = https://github.com/tom-ando/jsBlog.git
